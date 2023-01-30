@@ -1,22 +1,18 @@
 import React from "react";
-import useWebSocket from "react-use-websocket";
 import { useState, useEffect } from "react";
+import { w3cwebsocket } from "websocket";
+const client = new w3cwebsocket("ws://localhost:55455");
 
-function PacketLatency(props) {
+function PacketLatency() {
     const [latency, setLatency] = useState(0);
-    const [curTime, setCurTime] = useState(Date.now());
-    const { lastJsonMessage } = useWebSocket(props.endPoint);
 
     useEffect(() => {
-        setCurTime((prevTime) => {
-            setLatency(lastJsonMessage - prevTime);
-            return lastJsonMessage;
-        });
-    }, [lastJsonMessage]);
+        client.onmessage = (message) => setLatency(Date.now() - parseInt(message.data));
+    });
 
     return (
         <div>
-            <p>Packet latency from {props.endPoint}</p>
+            <p>Packet latency from Pylon connection.</p>
             <p>{latency} ms</p>
         </div>
     );
