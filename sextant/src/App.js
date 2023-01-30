@@ -1,25 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Banner from "./components/Banner";
+import Exhibit from "./components/Exhibit";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+            <Banner />
+            <Exhibit>
+                <div className="card">
+                    <h4>Card #1</h4>
+                    <p>Card Details</p>
+                </div>
+                <div className="card">
+                    <h4>Card #2</h4>
+                    <p>Card Details</p>
+                </div>
+                <div className="card">
+                    <h4>Card #3</h4>
+                    <p>Card Details</p>
+                </div>
+                <div className="card">
+                    <h4>Card #4</h4>
+                    <p>Card Details</p>
+                </div>
+                <div className="card">
+                    <h4>Card #5</h4>
+                    <p>Card Details</p>
+                </div>
+                <div className="card">
+                    <h4>Card #6</h4>
+                    <p>Card Details</p>
+                </div>
+                <div className="card">
+                    <h4>Card #7</h4>
+                    <p>Card Details</p>
+                </div>
+            </Exhibit>
+        </div>
+    );
 }
 
 export default App;
