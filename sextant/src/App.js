@@ -14,7 +14,7 @@ function App() {
             <Exhibit title="My ipv6 address">
                 <IPViewer type="ipv6" />
             </Exhibit>
-            <Exhibit title="Pylon Packet Latency">
+            <Exhibit title="Pylon Packet">
                 <PacketLatency endPoint="ws://localhost:55455" />
             </Exhibit>
         </div>
