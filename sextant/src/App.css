@@ -17,16 +17,12 @@
     color: #61dafb;
 }
 
-.exhibit-card-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+.exhibit-container {
+    float: left;
+    padding: 10px;
+    width: 250px;
 }
 
-.card {
-    background-color: #282c34;
-    color: white;
-    padding: 6px 0px;
-    width: 200px;
+.exhibit-content {
+    text-align: left;
 }

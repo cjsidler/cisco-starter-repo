@@ -5,36 +5,31 @@ import Exhibit from "./components/Exhibit";
 function App() {
     return (
         <div className="App">
-            <Banner />
-            <Exhibit>
-                <div className="card">
-                    <h4>Card #1</h4>
-                    <p>Card Details</p>
-                </div>
-                <div className="card">
-                    <h4>Card #2</h4>
-                    <p>Card Details</p>
-                </div>
-                <div className="card">
-                    <h4>Card #3</h4>
-                    <p>Card Details</p>
-                </div>
-                <div className="card">
-                    <h4>Card #4</h4>
-                    <p>Card Details</p>
-                </div>
-                <div className="card">
-                    <h4>Card #5</h4>
-                    <p>Card Details</p>
-                </div>
-                <div className="card">
-                    <h4>Card #6</h4>
-                    <p>Card Details</p>
-                </div>
-                <div className="card">
-                    <h4>Card #7</h4>
-                    <p>Card Details</p>
-                </div>
+            <Banner title="Sextant" />
+            <Exhibit title="Exhibit #1">
+                <p>Lorem ipsum dolor sit amet, diam iudicabit cu sea.</p>
+                <p>Sed at posidonium sadipscing referrentur, et pro nullam viderer.</p>
+                <p>Invidunt assueverit efficiantur est ad. Et vis vide tempor feugiat. </p>
+            </Exhibit>
+            <Exhibit title="Exhibit #2">
+                <p>Lorem ipsum dolor sit amet, diam iudicabit cu sea.</p>
+                <p>Sed at posidonium sadipscing referrentur, et pro nullam viderer.</p>
+                <p>Invidunt assueverit efficiantur est ad. Et vis vide tempor feugiat. </p>
+            </Exhibit>
+            <Exhibit title="Exhibit #3">
+                <p>Lorem ipsum dolor sit amet, diam iudicabit cu sea.</p>
+                <p>Sed at posidonium sadipscing referrentur, et pro nullam viderer.</p>
+                <p>Invidunt assueverit efficiantur est ad. Et vis vide tempor feugiat. </p>
+            </Exhibit>
+            <Exhibit title="Exhibit #4">
+                <p>Lorem ipsum dolor sit amet, diam iudicabit cu sea.</p>
+                <p>Sed at posidonium sadipscing referrentur, et pro nullam viderer.</p>
+                <p>Invidunt assueverit efficiantur est ad. Et vis vide tempor feugiat. </p>
+            </Exhibit>
+            <Exhibit title="Exhibit #5">
+                <p>Lorem ipsum dolor sit amet, diam iudicabit cu sea.</p>
+                <p>Sed at posidonium sadipscing referrentur, et pro nullam viderer.</p>
+                <p>Invidunt assueverit efficiantur est ad. Et vis vide tempor feugiat. </p>
             </Exhibit>
         </div>
     );
