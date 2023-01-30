@@ -1,35 +1,17 @@
 import "./App.css";
 import Banner from "./components/Banner";
 import Exhibit from "./components/Exhibit";
+import IPViewer from "./components/IPViewer";
 
 function App() {
     return (
         <div className="App">
             <Banner title="Sextant" />
-            <Exhibit title="Exhibit #1">
-                <p>Lorem ipsum dolor sit amet, diam iudicabit cu sea.</p>
-                <p>Sed at posidonium sadipscing referrentur, et pro nullam viderer.</p>
-                <p>Invidunt assueverit efficiantur est ad. Et vis vide tempor feugiat. </p>
+            <Exhibit title="My ipv4 address">
+                <IPViewer type="ipv4" />
             </Exhibit>
-            <Exhibit title="Exhibit #2">
-                <p>Lorem ipsum dolor sit amet, diam iudicabit cu sea.</p>
-                <p>Sed at posidonium sadipscing referrentur, et pro nullam viderer.</p>
-                <p>Invidunt assueverit efficiantur est ad. Et vis vide tempor feugiat. </p>
-            </Exhibit>
-            <Exhibit title="Exhibit #3">
-                <p>Lorem ipsum dolor sit amet, diam iudicabit cu sea.</p>
-                <p>Sed at posidonium sadipscing referrentur, et pro nullam viderer.</p>
-                <p>Invidunt assueverit efficiantur est ad. Et vis vide tempor feugiat. </p>
-            </Exhibit>
-            <Exhibit title="Exhibit #4">
-                <p>Lorem ipsum dolor sit amet, diam iudicabit cu sea.</p>
-                <p>Sed at posidonium sadipscing referrentur, et pro nullam viderer.</p>
-                <p>Invidunt assueverit efficiantur est ad. Et vis vide tempor feugiat. </p>
-            </Exhibit>
-            <Exhibit title="Exhibit #5">
-                <p>Lorem ipsum dolor sit amet, diam iudicabit cu sea.</p>
-                <p>Sed at posidonium sadipscing referrentur, et pro nullam viderer.</p>
-                <p>Invidunt assueverit efficiantur est ad. Et vis vide tempor feugiat. </p>
+            <Exhibit title="My ipv6 address">
+                <IPViewer type="ipv6" />
             </Exhibit>
         </div>
     );
