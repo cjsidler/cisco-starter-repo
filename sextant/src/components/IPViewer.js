@@ -19,9 +19,7 @@ function IPViewer(props) {
 
     return (
         <div>
-            <p>
-                {props.type} address: {ipAddress}
-            </p>
+            <p>{ipAddress}</p>
         </div>
     );
 }

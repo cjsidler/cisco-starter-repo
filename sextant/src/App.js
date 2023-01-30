@@ -2,6 +2,7 @@ import "./App.css";
 import Banner from "./components/Banner";
 import Exhibit from "./components/Exhibit";
 import IPViewer from "./components/IPViewer";
+import PacketLatency from "./components/PacketLatency";
 
 function App() {
     return (
@@ -12,6 +13,9 @@ function App() {
             </Exhibit>
             <Exhibit title="My ipv6 address">
                 <IPViewer type="ipv6" />
+            </Exhibit>
+            <Exhibit title="Pylon Packet Latency">
+                <PacketLatency endPoint="ws://localhost:55455" />
             </Exhibit>
         </div>
     );
