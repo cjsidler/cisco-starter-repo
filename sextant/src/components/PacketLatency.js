@@ -12,7 +12,6 @@ function PacketLatency() {
 
     return (
         <div>
-            <p>Packet latency from Pylon connection.</p>
             <p>{latency} ms</p>
         </div>
     );
